@@ -1,7 +1,7 @@
 /*
- * AlternatingSplittingOfLinkedList.cpp
+ * MaximumDepthOfTree.cpp
  *
- *  Created on: Mar 15, 2013
+ *  Created on: Mar 19, 2013
  *      Author: Avinash
  */
 //
@@ -34,31 +34,43 @@ using namespace __gnu_cxx;
 
 #define null NULL
 
-struct linkedListNode{
+struct tNode{
 	int value;
-	linkedListNode *next;
-
-	linkedListNode(){
-
-	}
-
-	linkedListNode(int value){
-		this->value = value;
-		next = NULL;
-	}
+	tNode *left;
+	tNode *right;
 };
 
-void AlternatingSplittingOfLinkedList(linkedListNode *ptr){
-	linkedListNode *listDelimiter;
+int HeightOfTree(tNode *ptr){
+	if(ptr == NULL){
+		return 0;
+	}
+	return 1+ max(HeightOfTree(ptr->left),HeightOfTree(ptr->right));
 }
 
-void AlternateSplitLinkedListByCreateNewLists(linkedListNode *ptr,linkedListNode **oddList,linkedListNode **evenList){
+int HeightOfTreePreOrderTraversal(tNode *ptr){
 
 }
 
-void AlternateSplitLinkedListHashMap(linkedListNode *ptr){
+int HeightOfTreePostOrderTraversal(tNode *ptr){
 
 }
+
+int HeightOfTreeInOrderTraversal(tNode *ptr){
+
+}
+
+int HeightOfTreeReversePreOrderTraversal(tNode *ptr){
+
+}
+
+int HeightOfTreeReversePostOrderTraversal(tNode *ptr){
+
+}
+
+int HeightOfTreeReverseInOrderTraversal(tNode *ptr){
+
+}
+
 
 
 //int main(){

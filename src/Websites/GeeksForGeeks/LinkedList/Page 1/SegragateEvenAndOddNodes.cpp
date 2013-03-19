@@ -1,7 +1,7 @@
 /*
- * AlternatingSplittingOfLinkedList.cpp
+ * SegragateEvenAndOddNodes.cpp
  *
- *  Created on: Mar 15, 2013
+ *  Created on: Mar 18, 2013
  *      Author: Avinash
  */
 //
@@ -37,26 +37,18 @@ using namespace __gnu_cxx;
 struct linkedListNode{
 	int value;
 	linkedListNode *next;
-
-	linkedListNode(){
-
-	}
-
-	linkedListNode(int value){
-		this->value = value;
-		next = NULL;
-	}
 };
 
-void AlternatingSplittingOfLinkedList(linkedListNode *ptr){
-	linkedListNode *listDelimiter;
-}
-
-void AlternateSplitLinkedListByCreateNewLists(linkedListNode *ptr,linkedListNode **oddList,linkedListNode **evenList){
+void SegragateEvenOddNodesInLinkedList(linkedListNode *ptr,linkedListNode **oddNodes,linkedListNode **evenNodes){
 
 }
 
-void AlternateSplitLinkedListHashMap(linkedListNode *ptr){
+
+void SegragateEvenOddNodesUsingQueue(linkedListNode *ptr){
+
+}
+
+void SegregateEvenOddNodesRecursion(linkedListNode *ptr){
 
 }
 

@@ -1,7 +1,7 @@
 /*
- * AlternatingSplittingOfLinkedList.cpp
+ * UnionAndIntersection.cpp
  *
- *  Created on: Mar 15, 2013
+ *  Created on: Mar 18, 2013
  *      Author: Avinash
  */
 //
@@ -33,33 +33,6 @@ using namespace std;
 using namespace __gnu_cxx;
 
 #define null NULL
-
-struct linkedListNode{
-	int value;
-	linkedListNode *next;
-
-	linkedListNode(){
-
-	}
-
-	linkedListNode(int value){
-		this->value = value;
-		next = NULL;
-	}
-};
-
-void AlternatingSplittingOfLinkedList(linkedListNode *ptr){
-	linkedListNode *listDelimiter;
-}
-
-void AlternateSplitLinkedListByCreateNewLists(linkedListNode *ptr,linkedListNode **oddList,linkedListNode **evenList){
-
-}
-
-void AlternateSplitLinkedListHashMap(linkedListNode *ptr){
-
-}
-
 
 //int main(){
 //	return -1;
